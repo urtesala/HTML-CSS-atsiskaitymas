@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap");
+@import url(https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.2/css/bootstrap-grid.min.css);
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -337,4 +338,56 @@ p {
   height: 440px;
   top: 114px;
   right: -36px;
+}
+
+footer .container {
+  padding-top: 0;
+  padding-bottom: 36px;
+}
+footer p {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  margin-bottom: 0;
+}
+footer h4 {
+  color: #555555;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding-bottom: 28px;
+  padding-top: 28px;
+  margin-bottom: 0;
+}
+footer .iconFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 16px;
+}
+footer .icons {
+  color: #999999;
+  word-spacing: 12px;
+}
+footer .footer-second {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+footer .footer-link {
+  color: #555555;
+  line-height: 200%;
+  font-weight: 400;
+  font-size: 20px;
+  text-decoration: none;
+}
+footer .footer-copyright {
+  padding-left: 32px;
+  padding-right: 110px;
+  padding-bottom: 73px;
+}
+footer .footer-copyright p {
+  color: #999999;
 }/*# sourceMappingURL=main.css.map */
