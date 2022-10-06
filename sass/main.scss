@@ -85,6 +85,8 @@
 
 .companies{
     .companies-grid{
+        padding-top: 56px;
+        padding-bottom: 56px;
         display: grid;
         grid-template-columns: 50% 1fr;
         align-items: center;
@@ -108,8 +110,115 @@
             width: auto;
             object-fit: cover;
          }
+
+         p{
+            margin-bottom: 0;
+         }
     }
 }
 
 // auction
 
+.auction{
+    overflow: hidden;
+    padding-bottom: 92px;
+
+    .container{
+        padding-top: 0;
+        padding-bottom:0;
+        padding-left: 0;
+        margin-left: 32px;
+        
+    }
+
+    .auction-carousel{
+        display: flex;
+        flex-direction: row;
+        gap:0;
+    }
+
+
+
+    .auction-card{
+        margin-left: 32px;
+        margin-top: 40px;
+        background-color: v.$secondary-light-color;
+        width: 290px;
+        border-radius: 16px;
+
+        h4, p{
+            margin-bottom: 12px;
+        }
+        }
+
+        .auction-card__bottom{
+            display: grid;
+            grid-template-columns: 50% 50%;
+            margin: 24px;
+    
+        }
+
+        .auction-card-bottomC1{
+            display: flex;
+            flex-direction: column;
+
+
+            .auction-series{
+                color: v.$secondary-orange-color;
+                font-weight: 500;
+                font-size: 12px;
+                text-transform: uppercase;
+            }
+    
+            .auction-name{
+                color: v.$primary-dark-color;
+                font-weight: 500;
+                font-size: 20px;
+            }
+    
+            .auction-number{
+                color: v.$primary-gray1-color;
+                font-size: 18px;
+                font-weight: 400;
+                margin-bottom: 24px;
+            }
+        }
+
+        .auction-card_-bottomC2{
+
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+
+            .auction-bid{
+                color: v.$primary-gray1-color;
+                font-weight: 500;
+                font-size: 12px;
+                text-transform: uppercase;
+            }
+    
+            .auction-eth{
+                color: v.$primary-dark-color;
+                font-weight: 500;
+                font-size: 20px;
+            }
+    
+            .auction-days{
+                color: v.$primary-gray1-color;
+                font-size: 18px;
+                font-weight: 400;
+                margin-bottom: 24px;
+            }
+
+            .etherium{
+                position: absolute;
+                top: 30px;
+                left: 15px;
+            }
+
+        }
+
+            
+
+}
