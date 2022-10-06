@@ -18,7 +18,6 @@
         padding:32px;
     }
 
-    
     .main-nav__link{
         font-weight: 400;
         font-size: 20px;
@@ -81,4 +80,36 @@
         color: v.$primary-dark-color;
     }
 }
+
+// companies
+
+.companies{
+    .companies-grid{
+        display: grid;
+        grid-template-columns: 50% 1fr;
+        align-items: center;
+        justify-content: center;
+        gap:14px;
+        
+        .whiteBlock{
+            height: 70px;
+            width: 56px;
+            background-color: #fff;
+            position: absolute;
+            right: 200px;
+        }  
+
+        .hidden{
+            display: none;
+        }
+
+        img{
+            height: 40px;
+            width: auto;
+            object-fit: cover;
+         }
+    }
+}
+
+// auction
 

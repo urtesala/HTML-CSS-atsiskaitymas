@@ -179,4 +179,32 @@ p {
 }
 .freeNft p {
   color: #111111;
+}
+
+.companies .companies-grid {
+  display: grid;
+  grid-template-columns: 50% 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 14px;
+}
+.companies .companies-grid .whiteBlock {
+  height: 70px;
+  width: 56px;
+  background-color: #fff;
+  position: absolute;
+  right: 200px;
+}
+.companies .companies-grid img {
+  height: 40px;
+  width: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.companies .companies-grid .hidden {
+  display: none;
 }/*# sourceMappingURL=main.css.map */
