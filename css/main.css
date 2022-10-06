@@ -117,6 +117,13 @@ p {
   bottom: 5px;
 }
 
+.break-line {
+  height: 2px;
+  width: 1280px;
+  background-color: #EEEEEE;
+  margin-bottom: 32px;
+}
+
 .main-header {
   position: static;
   background-color: #fff;
@@ -214,7 +221,6 @@ p {
 
 .auction {
   overflow: hidden;
-  padding-bottom: 92px;
 }
 .auction .container {
   padding-top: 0;
@@ -231,6 +237,7 @@ p {
       -ms-flex-direction: row;
           flex-direction: row;
   gap: 0;
+  margin-bottom: 120px;
 }
 .auction .auction-card {
   margin-left: 32px;
@@ -307,4 +314,27 @@ p {
   position: absolute;
   top: 30px;
   left: 15px;
+}
+
+.upsell {
+  position: relative;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 75% 25%;
+}
+.upsell .container {
+  padding-right: 0.5rem;
+}
+.upsell h2 {
+  color: #111111;
+  font-weight: 900;
+  font-size: 46px;
+  line-height: 58px;
+  margin-bottom: 46px;
+}
+.upsell .upsell-img__image {
+  position: absolute;
+  height: 440px;
+  top: 114px;
+  right: -36px;
 }/*# sourceMappingURL=main.css.map */
