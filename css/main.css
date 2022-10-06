@@ -60,6 +60,13 @@ h1 {
   margin-bottom: 46px;
 }
 
+h2 {
+  color: #111111;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 48px;
+}
+
 h5 {
   color: #FF3998;
   font-weight: 700;
@@ -96,6 +103,7 @@ p {
   width: 188px;
   border-radius: 50px;
   background-image: url(../assets/assets/background.svg);
+  background-size: fill;
 }
 .button .btn {
   position: absolute;
@@ -157,4 +165,18 @@ p {
   height: 424px;
   left: 194px;
   top: -24px;
+}
+
+.freeNft {
+  background-image: url(../assets/assets/background.svg);
+  background-size: cover;
+  background-position: 20%;
+  margin-top: 100px;
+}
+.freeNft h2 {
+  margin-top: 122px;
+  margin-bottom: 16px;
+}
+.freeNft p {
+  color: #111111;
 }/*# sourceMappingURL=main.css.map */

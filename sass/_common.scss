@@ -16,6 +16,12 @@ h1{
     line-height: 58px;
     margin-bottom: 46px;
 }
+h2{
+    color: v.$primary-dark-color;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 48px;
+}
 h5{
     color: v.$secondary-pink-color;
     font-weight: 700;
@@ -51,6 +57,7 @@ p{
     width:188px;
     border-radius: 50px;
     background-image: url(../assets/assets/background.svg);
+    background-size: fill;
 
     .btn{
         position: absolute;

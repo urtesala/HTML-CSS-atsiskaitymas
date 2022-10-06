@@ -64,3 +64,21 @@
         top: -24px;
     }
 }
+
+// free nft
+
+.freeNft{
+    background-image: url(../assets/assets/background.svg);
+    background-size: cover;
+    background-position: 20%;
+    margin-top: 100px;
+
+    h2{
+        margin-top: 122px;
+        margin-bottom: 16px;
+    }
+    p{
+        color: v.$primary-dark-color;
+    }
+}
+
