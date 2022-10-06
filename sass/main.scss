@@ -5,10 +5,12 @@
 // HEADER
 
 .main-header{
-    position: fixed;
+    position: static;
+    background-color: #fff;
     top:0;
     left: 0;
-    width: 100vw;
+    max-width:428px;
+    height: 110px;
 
     .container{
         display: flex;
@@ -45,3 +47,20 @@
 
 // hero
 
+.hero{
+    position:relative;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 75% 25%;
+
+    .container{
+        padding-right: 0.5rem;
+    }
+
+    .hero-img__image{
+        position: absolute;
+        height: 424px;
+        left: 194px;
+        top: -24px;
+    }
+}
