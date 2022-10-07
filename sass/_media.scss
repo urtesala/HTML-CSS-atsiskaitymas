@@ -1,0 +1,54 @@
+@media screen and (min-width: 760px){
+    // tablet
+
+    // hero
+    .hero{
+
+        // .hero-img__image{
+        //     height: 600px;
+        //     width: 100%;
+        // }
+
+    }
+    
+
+
+    .freeNft-text{
+        width: 50%;
+    }
+
+    .companies{
+        .companies-grid{
+            .boom{
+                overflow: initial;
+                width: auto;
+            }
+
+        }
+
+
+        
+    }
+
+    
+}
+
+@media screen and (min-width: 1440px){
+
+    .main-header{
+        .burger {
+            display: none;
+          }
+
+        .main-nav > ul{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: center;
+            gap:28px;
+            }  
+    }
+    
+    
+                    
+}

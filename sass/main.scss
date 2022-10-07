@@ -9,29 +9,15 @@
     background-color: #fff;
     top:0;
     left: 0;
-    max-width:428px;
+    max-width:100vw;
     height: 110px;
 
     .container{
         display: flex;
         justify-content: space-between;
-        padding:32px;
+        align-items: center;
+        padding:2rem;
     }
-
-    .main-nav__link{
-        font-weight: 400;
-        font-size: 20px;
-        line-height: 100%;
-        color: v.$primary-gray1-color;
-    }
-
-    // ul{
-    //     display: flex;
-    //     flex-direction: row;
-    //     justify-content: flex-end;
-    //     align-items: center;
-    //     gap:28px;
-    // }
 
     ul{
         display: none;
@@ -39,7 +25,6 @@
 
     .burger{
         font-size: 25px;
-        line-height: 38px;
         color: v.$primary-gray2-color;
     }
 }
@@ -52,15 +37,23 @@
     display: grid;
     grid-template-columns: 75% 25%;
 
-    .container{
-        padding-right: 0;
+    .hero-p{
+        width: 274px;
+        max-width: 537px;
+        height: 120px;
     }
+
+    .container{
+        padding-right: 1rem;
+    }
+    
 
     .hero-img__image{
         position: absolute;
-        height: 424px;
-        left: 194px;
-        top: -24px;
+        height: 100%;
+        width: 100%;
+        left: 195px;
+        bottom: 15%;
     }
 }
 
@@ -71,6 +64,10 @@
     background-size: cover;
     background-position: 20%;
     margin-top: 100px;
+
+    .freeNft-text{
+        width: 100%;
+    }
 
     h2{
         margin-top: 122px;
@@ -85,6 +82,7 @@
 
 .companies{
     .companies-grid{
+        
         padding-top: 56px;
         padding-bottom: 56px;
         display: grid;
@@ -92,14 +90,11 @@
         align-items: center;
         justify-content: center;
         gap:14px;
-        
-        .whiteBlock{
-            height: 70px;
-            width: 56px;
-            background-color: #fff;
-            position: absolute;
-            right: 200px;
-        }  
+
+        .boom{
+            overflow: hidden;
+            width: 130px;
+        }
 
         .hidden{
             display: none;
@@ -239,11 +234,20 @@
         margin-bottom: 46px;
     }
 
+    .upsell-title{
+        width: 70%;
+    }
+
+    .upsell-p{
+        width: 70%;
+    }
+
     .upsell-img__image{
         position: absolute;
-        height: 440px;
-        top: 114px;
-        right: -36px;
+        height: 75%;
+        bottom: 33px;
+        width: 100%;
+        left: 142px;
     }
 }
 
@@ -309,4 +313,9 @@ footer{
     }
 
 }
+
+
+// media
+
+@import 'media';
 

@@ -53,25 +53,41 @@ body {
   font-family: "Inter", sans-serif;
 }
 
+.main-nav__link {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 100%;
+  text-decoration: none;
+  color: #555555;
+}
+
+.main-nav__linkPink {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 100%;
+  text-decoration: none;
+  color: #FF3998;
+}
+
 h1 {
   color: #111111;
   font-weight: 900;
-  font-size: 46px;
-  line-height: 58px;
+  font-size: 3rem;
+  line-height: 3.6rem;
   margin-bottom: 46px;
 }
 
 h2 {
   color: #111111;
   font-weight: 500;
-  font-size: 40px;
+  font-size: 2.5rem;
   line-height: 48px;
 }
 
 h5 {
   color: #FF3998;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 19px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -81,13 +97,13 @@ h5 {
 p {
   color: #555555;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 150%;
   margin-bottom: 32px;
 }
 
 .container {
-  padding: 32px;
+  padding: 2rem;
 }
 
 .unlisted {
@@ -100,6 +116,7 @@ p {
   padding-right: 0.5rem;
   margin-left: 0;
   padding-left: 0;
+  padding-top: 32px;
 }
 
 .button {
@@ -136,7 +153,7 @@ p {
   background-color: #fff;
   top: 0;
   left: 0;
-  max-width: 428px;
+  max-width: 100vw;
   height: 110px;
 }
 .main-header .container {
@@ -146,20 +163,16 @@ p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 32px;
-}
-.main-header .main-nav__link {
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 100%;
-  color: #555555;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem;
 }
 .main-header ul {
   display: none;
 }
 .main-header .burger {
   font-size: 25px;
-  line-height: 38px;
   color: #999999;
 }
 
@@ -169,14 +182,20 @@ p {
   display: grid;
   grid-template-columns: 75% 25%;
 }
+.hero .hero-p {
+  width: 274px;
+  max-width: 537px;
+  height: 120px;
+}
 .hero .container {
-  padding-right: 0;
+  padding-right: 1rem;
 }
 .hero .hero-img__image {
   position: absolute;
-  height: 424px;
-  left: 194px;
-  top: -24px;
+  height: 100%;
+  width: 100%;
+  left: 195px;
+  bottom: 15%;
 }
 
 .freeNft {
@@ -184,6 +203,9 @@ p {
   background-size: cover;
   background-position: 20%;
   margin-top: 100px;
+}
+.freeNft .freeNft-text {
+  width: 100%;
 }
 .freeNft h2 {
   margin-top: 122px;
@@ -206,12 +228,9 @@ p {
           justify-content: center;
   gap: 14px;
 }
-.companies .companies-grid .whiteBlock {
-  height: 70px;
-  width: 56px;
-  background-color: #fff;
-  position: absolute;
-  right: 200px;
+.companies .companies-grid .boom {
+  overflow: hidden;
+  width: 130px;
 }
 .companies .companies-grid .hidden {
   display: none;
@@ -339,11 +358,18 @@ p {
   line-height: 58px;
   margin-bottom: 46px;
 }
+.upsell .upsell-title {
+  width: 70%;
+}
+.upsell .upsell-p {
+  width: 70%;
+}
 .upsell .upsell-img__image {
   position: absolute;
-  height: 440px;
-  top: 114px;
-  right: -36px;
+  height: 75%;
+  bottom: 33px;
+  width: 100%;
+  left: 142px;
 }
 
 footer .container {
@@ -397,4 +423,35 @@ footer .footer-copyright {
 footer .footer-copyright p {
   font-size: 18px;
   color: #999999;
+}
+
+@media screen and (min-width: 760px) {
+  .freeNft-text {
+    width: 50%;
+  }
+  .companies .companies-grid .boom {
+    overflow: initial;
+    width: auto;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .main-header .burger {
+    display: none;
+  }
+  .main-header .main-nav > ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 28px;
+  }
 }/*# sourceMappingURL=main.css.map */
