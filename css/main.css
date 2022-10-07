@@ -96,13 +96,19 @@ p {
   margin: 0;
 }
 
+.btn-container {
+  padding-right: 0.5rem;
+  margin-left: 0;
+  padding-left: 0;
+}
+
 .button {
   position: relative;
   height: 75px;
   width: 188px;
   border-radius: 50px;
   background-image: url(../assets/assets/background.svg);
-  background-size: fill;
+  background-position: 30%;
 }
 .button .btn {
   position: absolute;
@@ -164,7 +170,7 @@ p {
   grid-template-columns: 75% 25%;
 }
 .hero .container {
-  padding-right: 0.5rem;
+  padding-right: 0;
 }
 .hero .hero-img__image {
   position: absolute;
@@ -378,7 +384,7 @@ footer .footer-second {
 }
 footer .footer-link {
   color: #555555;
-  line-height: 200%;
+  line-height: 180%;
   font-weight: 400;
   font-size: 20px;
   text-decoration: none;
@@ -389,5 +395,6 @@ footer .footer-copyright {
   padding-bottom: 73px;
 }
 footer .footer-copyright p {
+  font-size: 18px;
   color: #999999;
 }/*# sourceMappingURL=main.css.map */
