@@ -7,21 +7,22 @@
 .main-header{
     position: static;
     background-color: #fff;
-    top:0;
-    left: 0;
-    max-width:100vw;
     height: 110px;
 
     .container{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding:2rem;
+        margin-left:1rem;
     }
 
     ul{
         display: none;
     }
+
+    .nav-list li:last-child a {
+        color: v.$secondary-pink-color;
+      }
 
     .burger{
         font-size: 25px;
@@ -35,7 +36,7 @@
     position:relative;
     overflow: hidden;
     display: grid;
-    grid-template-columns: 75% 25%;
+    grid-template-columns: 85% 15%;
 
     .hero-p{
         width: 274px;
@@ -49,11 +50,11 @@
     
 
     .hero-img__image{
+        width: 85%;
+        height: 85%;
         position: absolute;
-        height: 100%;
-        width: 100%;
-        left: 195px;
-        bottom: 15%;
+        bottom: 9rem;
+        left: 14rem;
     }
 }
 
@@ -62,6 +63,8 @@
 .freeNft{
     background-image: url(../assets/assets/background.svg);
     background-size: cover;
+    margin: auto;
+    width:100%;
     background-position: 20%;
     margin-top: 100px;
 
@@ -117,25 +120,20 @@
 .auction{
     overflow: hidden;
 
-    .container{
+    .auction-text{
         padding-top: 0;
         padding-bottom:0;
         padding-left: 0;
-        margin-left: 32px;
         
     }
 
     .auction-carousel{
         display: flex;
+        justify-content: space-between;
         flex-direction: row;
-        gap:0;
         margin-bottom: 120px;
     }
-
-
-
     .auction-card{
-        margin-left: 32px;
         margin-top: 40px;
         background-color: v.$secondary-light-color;
         width: 290px;
@@ -233,13 +231,13 @@
         line-height: 58px;
         margin-bottom: 46px;
     }
-
-    .upsell-title{
-        width: 70%;
+    .hidden {
+        display:none;
     }
 
+
     .upsell-p{
-        width: 70%;
+        width: 205px;
     }
 
     .upsell-img__image{
@@ -256,6 +254,7 @@ footer{
     .container{
         padding-top: 0;
         padding-bottom: 36px;
+        margin-left: 0;
     }
 
 

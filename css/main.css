@@ -61,15 +61,7 @@ body {
   color: #555555;
 }
 
-.main-nav__linkPink {
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 100%;
-  text-decoration: none;
-  color: #FF3998;
-}
-
-h1 {
+.hero-title {
   color: #111111;
   font-weight: 900;
   font-size: 3rem;
@@ -151,9 +143,6 @@ p {
 .main-header {
   position: static;
   background-color: #fff;
-  top: 0;
-  left: 0;
-  max-width: 100vw;
   height: 110px;
 }
 .main-header .container {
@@ -166,10 +155,13 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 2rem;
+  margin-left: 1rem;
 }
 .main-header ul {
   display: none;
+}
+.main-header .nav-list li:last-child a {
+  color: #FF3998;
 }
 .main-header .burger {
   font-size: 25px;
@@ -180,7 +172,7 @@ p {
   position: relative;
   overflow: hidden;
   display: grid;
-  grid-template-columns: 75% 25%;
+  grid-template-columns: 85% 15%;
 }
 .hero .hero-p {
   width: 274px;
@@ -191,16 +183,18 @@ p {
   padding-right: 1rem;
 }
 .hero .hero-img__image {
+  width: 85%;
+  height: 85%;
   position: absolute;
-  height: 100%;
-  width: 100%;
-  left: 195px;
-  bottom: 15%;
+  bottom: 9rem;
+  left: 14rem;
 }
 
 .freeNft {
   background-image: url(../assets/assets/background.svg);
   background-size: cover;
+  margin: auto;
+  width: 100%;
   background-position: 20%;
   margin-top: 100px;
 }
@@ -248,25 +242,25 @@ p {
 .auction {
   overflow: hidden;
 }
-.auction .container {
+.auction .auction-text {
   padding-top: 0;
   padding-bottom: 0;
   padding-left: 0;
-  margin-left: 32px;
 }
 .auction .auction-carousel {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  gap: 0;
   margin-bottom: 120px;
 }
 .auction .auction-card {
-  margin-left: 32px;
   margin-top: 40px;
   background-color: #EEEEEE;
   width: 290px;
@@ -358,11 +352,11 @@ p {
   line-height: 58px;
   margin-bottom: 46px;
 }
-.upsell .upsell-title {
-  width: 70%;
+.upsell .hidden {
+  display: none;
 }
 .upsell .upsell-p {
-  width: 70%;
+  width: 205px;
 }
 .upsell .upsell-img__image {
   position: absolute;
@@ -375,6 +369,7 @@ p {
 footer .container {
   padding-top: 0;
   padding-bottom: 36px;
+  margin-left: 0;
 }
 footer p {
   padding-top: 32px;
@@ -426,19 +421,44 @@ footer .footer-copyright p {
 }
 
 @media screen and (min-width: 760px) {
+  .hero {
+    padding: 2rem;
+  }
   .freeNft-text {
     width: 50%;
+  }
+  .companies .container {
+    padding-top: 126px;
+    padding-bottom: 126px;
+  }
+  .companies .companies-grid {
+    margin-left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    gap: 105px;
   }
   .companies .companies-grid .boom {
     overflow: initial;
     width: auto;
   }
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1030px) {
+  .container {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+  .auction {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
   .main-header .burger {
     display: none;
   }
-  .main-header .main-nav > ul {
+  .main-header .main-nav ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -453,5 +473,61 @@ footer .footer-copyright p {
         -ms-flex-align: center;
             align-items: center;
     gap: 28px;
+  }
+  .hero {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .hero .container {
+    padding-top: 5rem;
+  }
+  .hero .hero-text .hero-title {
+    font-size: 6rem;
+    line-height: 116px;
+  }
+  .hero .hero-text .hero-p {
+    width: 502px;
+    max-width: 537px;
+    height: 120px;
+  }
+  .hero .hero-img__image {
+    width: 100%;
+    height: 100%;
+    position: revert;
+  }
+  .freeNft {
+    border-radius: 10px;
+  }
+  .companies .companies-grid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    gap: unset;
+    padding-left: 0;
+    padding-right: 0;
+    margin: auto;
+  }
+  .companies .companies-grid .hidden {
+    display: inline;
+  }
+  .upsell .upsell-text .hidden {
+    display: inline;
+  }
+  .upsell .upsell-text h2 {
+    font-size: 56px;
+    line-height: 68px;
+  }
+  .upsell .upsell-text .upsell-p {
+    width: 510px;
+  }
+  .upsell .upsell-img__image {
+    height: 90%;
+    bottom: 33px;
+    width: 100%;
+    left: 220px;
   }
 }/*# sourceMappingURL=main.css.map */
