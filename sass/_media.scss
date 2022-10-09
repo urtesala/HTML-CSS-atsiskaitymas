@@ -1,8 +1,6 @@
 @media screen and (min-width: 760px){
-    // tablet
     .hero{
         padding: 2rem;
-        
         .hero-img__image{
             bottom: 5rem;
         }
@@ -22,7 +20,6 @@
             padding-left: 0;
             padding-right: 0;
             margin: auto;
-
             .boom{
                 overflow: initial;
                 width: auto;
@@ -32,18 +29,14 @@
 }
 
 @media screen and (min-width: 1030px){
-    // laptop +
-
     .container{
         padding-left: 80px;
         padding-right: 80px;
     }
-
     .main-header{
         .burger {
             display: none;
           }
-
         .main-nav  ul{
             display: flex;
             flex-direction: row;
@@ -52,10 +45,8 @@
             gap:28px;
             }  
     }
-
     .hero{
         display:flex;
-
         .container {
             padding-top:5rem;
         }
@@ -76,11 +67,9 @@
             position:revert;
         }
     }
-
     .freeNft {
         border-radius: 10px;
-    }
-    
+    }    
     .companies{
         .companies-grid{
             .hidden{
@@ -88,12 +77,10 @@
             }
         }
     }
-
     .auction{
         margin-left:0;
         padding-left: 80px;
         padding-right: 80px;
-
         .auction-carousel{
             overflow-x: visible;
             gap: 30px;
@@ -122,13 +109,11 @@
             }
         }
     }
-    
     .footer{
         display: grid;
         grid-template-columns: 40% 60%;
         align-items: center;
         margin-top: 120px;
-        
         .footer-second{
             display: flex;
             flex-direction: row;
