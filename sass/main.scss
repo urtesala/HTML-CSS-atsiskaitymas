@@ -1,0 +1,288 @@
+@use 'reset';
+@use 'vars' as v;
+@use 'common';
+
+// HEADER
+
+.main-header{
+    position: static;
+    background-color: #fff;
+    height: 110px;
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left:1rem;
+    }
+    ul{
+        display: none;
+    }
+    .main-nav__link{
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 100%;
+        text-decoration: none;
+        color: v.$primary-gray1-color;
+    }
+    .nav-list li:last-child a {
+        color: v.$secondary-pink-color;
+    }
+    .burger{
+        font-size: 25px;
+        color: v.$primary-gray2-color;
+    }
+}
+
+// hero
+
+.hero{
+    position:relative;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 85% 15%;
+    .container{
+        padding-right: 1rem;
+    }
+    .hero-p{
+        width: 274px;
+        max-width: 537px;
+        height: 120px;
+    }
+    .hero-img__image{
+        width: 85%;
+        height: 85%;
+        position: absolute;
+        bottom: 9rem;
+        left: 14rem;
+    }
+}
+
+// FREE NFT
+
+.freeNft{
+    background-image: url(../assets/assets/background.svg);
+    background-size: cover;
+    margin: auto;
+    width:100%;
+    background-position: 20%;
+    margin-top: 100px;
+    .freeNft-text{
+        width: 100%;
+    }
+    h2{
+        margin-top: 122px;
+        margin-bottom: 16px;
+    }
+    p{
+        color: v.$primary-dark-color;
+    }
+}
+
+// COMPANIES
+
+.companies{
+    .companies-grid{
+        padding-top: 56px;
+        padding-bottom: 56px;
+        display: grid;
+        grid-template-columns: 50% 1fr;
+        align-items: center;
+        justify-content: center;
+        gap:14px;
+        .boom{
+            overflow: hidden;
+            width: 130px;
+        }
+        .hidden{
+            display: none;
+        }
+        img{
+            height: 40px;
+            width: auto;
+            object-fit: cover;
+        }
+        p{
+            margin-bottom: 0;
+         }
+    }
+}
+
+// AUCTION
+
+.auction{
+    overflow: hidden;
+    margin-left: 40px;
+    .auction-text{
+        padding-top: 0;
+        padding-bottom:0;
+        padding-left: 0;   
+    }
+    .auction-carousel{
+        overflow-x: scroll;
+        width: auto;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        margin-bottom: 120px;
+        gap:40px;
+    }
+    .auction-carousel::-webkit-scrollbar{
+        display: none;
+    }
+    .auction-card{
+        margin-top: 40px;
+        background-color: v.$secondary-light-color;
+        width: 290px;
+        border-radius: 16px;
+        h4, p{
+            margin-bottom: 12px;
+        }
+        &__bottom{
+            display: grid;
+            grid-template-columns: 50% 50%;
+            margin: 24px;
+        }
+        .auction-card-bottomC1{
+            display: flex;
+            flex-direction: column;
+            .auction-series{
+                color: v.$secondary-orange-color;
+                font-weight: 500;
+                font-size: 12px;
+                text-transform: uppercase;
+            }
+            .auction-name{
+                color: v.$primary-dark-color;
+                font-weight: 500;
+                font-size: 20px;
+            }
+            .auction-number{
+                color: v.$primary-gray1-color;
+                font-size: 18px;
+                font-weight: 400;
+                margin-bottom: 24px;
+            }
+        }        
+        .auction-card__bottomC2{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            .auction-bid{
+                color: v.$primary-gray1-color;
+                font-weight: 500;
+                font-size: 12px;
+                text-transform: uppercase;
+            }
+            .auction-eth{
+                color: v.$primary-dark-color;
+                font-weight: 500;
+                font-size: 20px;
+            }
+            .auction-days{
+                color: v.$primary-gray1-color;
+                font-size: 18px;
+                font-weight: 400;
+                margin-bottom: 24px;
+            }
+            .etherium{
+                position: absolute;
+                top: 30px;
+                left: 15px;
+            }
+        }
+    }
+}
+
+// UPSELL
+
+.upsell{
+    position:relative;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 75% 25%;
+    .container{
+        padding-right: 0.5rem;
+    }
+    h2{
+        color:v.$primary-dark-color;
+        font-weight: 900;
+        font-size: 46px;
+        line-height: 58px;
+        margin-bottom: 46px;
+        max-width: 450px;
+    }
+    .hidden {
+        display:none;
+    }
+    .upsell-p{
+        width: 205px;
+    }
+    .upsell-img__image{
+        position: absolute;
+        height: 75%;
+        bottom: 33px;
+        width: 100%;
+        left: 142px;
+    }
+}
+
+// FOOTER
+
+.footer{
+    .container{
+        padding-top: 0;
+        padding-bottom: 36px;
+        margin-left: 0;
+    }
+    p{
+        padding-top: 32px;
+        padding-bottom: 32px;
+        margin-bottom: 0;
+    }
+    h4{
+        color: v.$primary-gray1-color;
+        font-weight: 700;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        padding-bottom: 28px;
+        padding-top: 28px;
+        margin-bottom: 0;
+
+    }
+    .iconFlex{
+        display: flex;
+        flex-direction: row;
+        gap:16px;
+    }
+    .icons{
+        color: v.$primary-gray2-color;
+        word-spacing: 12px;
+    }
+    .footer-second{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        
+    }
+    .footer-link{
+        color: v.$primary-gray1-color;
+        line-height: 180%;
+        font-weight: 400;
+        font-size: 20px;
+        text-decoration: none;
+    }
+    .footer-copyright{
+        padding-left: 32px;
+        padding-right: 110px;
+        padding-bottom: 73px;
+        p{
+            font-size: 18px;
+            color:v.$primary-gray2-color;
+        }
+    }
+}
+
+// MEDIA
+
+@import 'media';
+

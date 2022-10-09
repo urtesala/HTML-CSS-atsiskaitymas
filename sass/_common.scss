@@ -1,0 +1,81 @@
+@use 'vars' as v;
+
+@import url(https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.2/css/bootstrap-grid.min.css);
+
+body{
+    background-color: #fff;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.12);
+    border-radius: 16px;
+    font-family: 'Inter', sans-serif;
+}
+.hero-title{
+    color:v.$primary-dark-color;
+    font-weight: 900;
+    font-size: 3rem;
+    line-height: 3.6rem;
+    margin-bottom: 46px;
+}
+h2{
+    color: v.$primary-dark-color;
+    font-weight: 500;
+    font-size: 2.5rem;
+    line-height: 48px;
+}
+h5{
+    color: v.$secondary-pink-color;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 19px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+}
+p{
+    color: v.$primary-gray1-color;
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 150%;
+    margin-bottom: 32px;
+}
+.container {
+    padding:2rem
+}
+.unlisted {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+.btn-container{
+    padding-right: 0.5rem;
+    margin-left: 0;
+    padding-left:0;
+    padding-top: 32px;
+}
+.button{
+    position: relative;
+    height: 75px;
+    width:188px;
+    border-radius: 50px;
+    background-image: url(../assets/assets/background.svg);
+    background-position: 30%;
+    .btn{
+        position: absolute;
+        border:none;
+        border-radius: 50px;
+        background-color: #fff;
+        font-weight: 600;
+        font-size: 20px;
+        height: 65px;
+        width: 178px;
+        top: 5px;
+        left: 5px;
+        bottom: 5px;
+    }
+}
+.break-line{
+    height: 2px;
+    width: 1280px;
+    background-color:v.$secondary-light-color;
+    margin-bottom: 32px;
+}
