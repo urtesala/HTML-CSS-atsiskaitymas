@@ -259,6 +259,7 @@ p {
       -ms-flex-direction: row;
           flex-direction: row;
   margin-bottom: 120px;
+  gap: 40px;
 }
 .auction .auction-card {
   margin-top: 40px;
@@ -424,6 +425,9 @@ footer .footer-copyright p {
   .hero {
     padding: 2rem;
   }
+  .hero .hero-img__image {
+    bottom: 5rem;
+  }
   .freeNft-text {
     width: 50%;
   }
@@ -439,7 +443,7 @@ footer .footer-copyright p {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-    gap: 105px;
+    gap: 30px;
   }
   .companies .companies-grid .boom {
     overflow: initial;
@@ -529,5 +533,26 @@ footer .footer-copyright p {
     bottom: 33px;
     width: 100%;
     left: 220px;
+  }
+  .footer {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    margin-top: 120px;
+  }
+  .footer .footer-second {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    gap: 70px;
+  }
+  .footer .footer-copyright {
+    margin-left: 45px;
   }
 }/*# sourceMappingURL=main.css.map */

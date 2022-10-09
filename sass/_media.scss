@@ -4,6 +4,10 @@
     // hero
     .hero{
         padding: 2rem;
+        
+        .hero-img__image{
+            bottom: 5rem;
+        }
     }
 
 
@@ -24,7 +28,7 @@
                 margin-left: 0;
                 display: flex;
                 justify-content: flex-start;
-                gap:105px;
+                gap:30px;
         }        
     }
 
@@ -121,5 +125,21 @@
                 left: 220px;
             }
         }
-    }    
+    }
+    
+    .footer{
+        display: grid;
+        grid-template-columns: 40% 60%;
+        margin-top: 120px;
+
+        .footer-second{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            gap: 70px;
+        }
+        .footer-copyright{
+            margin-left: 45px;
+        }
+    }
 }
