@@ -248,6 +248,7 @@ p {
   padding-left: 0;
 }
 .auction .auction-carousel {
+  overflow-x: scroll;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -436,14 +437,16 @@ footer .footer-copyright p {
     padding-bottom: 126px;
   }
   .companies .companies-grid {
-    margin-left: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    gap: 30px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    gap: unset;
+    padding-left: 0;
+    padding-right: 0;
+    margin: auto;
   }
   .companies .companies-grid .boom {
     overflow: initial;
@@ -452,10 +455,6 @@ footer .footer-copyright p {
 }
 @media screen and (min-width: 1030px) {
   .container {
-    padding-left: 80px;
-    padding-right: 80px;
-  }
-  .auction {
     padding-left: 80px;
     padding-right: 80px;
   }
@@ -503,20 +502,12 @@ footer .footer-copyright p {
   .freeNft {
     border-radius: 10px;
   }
-  .companies .companies-grid {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    gap: unset;
-    padding-left: 0;
-    padding-right: 0;
-    margin: auto;
-  }
   .companies .companies-grid .hidden {
     display: inline;
+  }
+  .auction {
+    padding-left: 80px;
+    padding-right: 80px;
   }
   .upsell .upsell-text .hidden {
     display: inline;

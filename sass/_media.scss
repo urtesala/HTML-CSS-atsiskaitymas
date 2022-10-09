@@ -1,7 +1,5 @@
 @media screen and (min-width: 760px){
     // tablet
-
-    // hero
     .hero{
         padding: 2rem;
         
@@ -9,40 +7,34 @@
             bottom: 5rem;
         }
     }
-
-
     .freeNft-text{
         width: 50%;
     }
-
     .companies{
         .container{
             padding-top: 126px;
             padding-bottom: 126px;
         }
         .companies-grid{
+            display: flex;
+            justify-content: space-between;
+            gap: unset;
+            padding-left: 0;
+            padding-right: 0;
+            margin: auto;
+
             .boom{
                 overflow: initial;
                 width: auto;
             }
-                margin-left: 0;
-                display: flex;
-                justify-content: flex-start;
-                gap:30px;
         }        
-    }
-
-    
+    }  
 }
 
 @media screen and (min-width: 1030px){
+    // laptop +
 
     .container{
-        padding-left: 80px;
-        padding-right: 80px;
-    }
-
-    .auction{
         padding-left: 80px;
         padding-right: 80px;
     }
@@ -60,7 +52,6 @@
             gap:28px;
             }  
     }
-
 
     .hero{
         display:flex;
@@ -92,23 +83,22 @@
     
     .companies{
         .companies-grid{
-            display: flex;
-            justify-content: space-between;
-            gap: unset;
-            padding-left: 0;
-            padding-right: 0;
-            margin: auto;
-
             .hidden{
                 display: inline;
             }
         }
     }
+
+    .auction{
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+    
     .upsell{
         .upsell-text{
             .hidden{
                 display: inline;
-            }
+            } 
             h2{
                 font-size: 56px;
                 line-height: 68px;
@@ -131,7 +121,7 @@
         display: grid;
         grid-template-columns: 40% 60%;
         margin-top: 120px;
-
+        
         .footer-second{
             display: flex;
             flex-direction: row;
@@ -141,5 +131,5 @@
         .footer-copyright{
             margin-left: 45px;
         }
-    }
+    }    
 }
