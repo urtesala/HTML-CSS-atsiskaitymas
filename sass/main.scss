@@ -126,6 +126,8 @@
 
 .auction{
     overflow: hidden;
+    margin-left: 40px;
+
 
     .auction-text{
         padding-top: 0;
@@ -135,11 +137,15 @@
 
     .auction-carousel{
         overflow-x: scroll;
+        width: auto;
         display: flex;
         justify-content: space-between;
         flex-direction: row;
         margin-bottom: 120px;
         gap:40px;
+    }
+    .auction-carousel::-webkit-scrollbar{
+        display: none;
     }
 
     .auction-card{
@@ -156,64 +162,58 @@
             display: grid;
             grid-template-columns: 50% 50%;
             margin: 24px;
+        }
 
-            &__bottomC1{
-                display: flex;
-                flex-direction: column;
-                
-                .auction-series{
-                    color: v.$secondary-orange-color;
-                    font-weight: 500;
-                    font-size: 12px;
-                    text-transform: uppercase;
-                }
-        
-                .auction-name{
-                    color: v.$primary-dark-color;
-                    font-weight: 500;
-                    font-size: 20px;
-                }
-        
-                .auction-number{
-                    color: v.$primary-gray1-color;
-                    font-size: 18px;
-                    font-weight: 400;
-                    margin-bottom: 24px;
-                }
+        .auction-card-bottomC1{
+            display: flex;
+            flex-direction: column;
+            
+            .auction-series{
+                color: v.$secondary-orange-color;
+                font-weight: 500;
+                font-size: 12px;
+                text-transform: uppercase;
             }
-    
-            &__bottomC2{
-    
-                position: relative;
-                display: flex;
-                flex-direction: column;
-                align-items: flex-end;
-                
-                .auction-bid{
-                    color: v.$primary-gray1-color;
-                    font-weight: 500;
-                    font-size: 12px;
-                    text-transform: uppercase;
-                }
+
+            .auction-name{
+                color: v.$primary-dark-color;
+                font-weight: 500;
+                font-size: 20px;
+            }
+            .auction-number{
+                color: v.$primary-gray1-color;
+                font-size: 18px;
+                font-weight: 400;
+                margin-bottom: 24px;
+            }
+        }
         
-                .auction-eth{
-                    color: v.$primary-dark-color;
-                    font-weight: 500;
-                    font-size: 20px;
-                }
-        
-                .auction-days{
-                    color: v.$primary-gray1-color;
-                    font-size: 18px;
-                    font-weight: 400;
-                    margin-bottom: 24px;
-                }
-    
-                .etherium{
-                    position: absolute;
-                    top: 30px;
-                    left: 15px;
-                }
+        .auction-card__bottomC2{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            .auction-bid{
+                color: v.$primary-gray1-color;
+                font-weight: 500;
+                font-size: 12px;
+                text-transform: uppercase;
+            }
+            .auction-eth{
+                color: v.$primary-dark-color;
+                font-weight: 500;
+                font-size: 20px;
+            }
+            .auction-days{
+                color: v.$primary-gray1-color;
+                font-size: 18px;
+                font-weight: 400;
+                margin-bottom: 24px;
+            }
+            .etherium{
+                position: absolute;
+                top: 30px;
+                left: 15px;
             }
         }
     }
@@ -237,6 +237,7 @@
         font-size: 46px;
         line-height: 58px;
         margin-bottom: 46px;
+        max-width: 450px;
     }
 
     .hidden {

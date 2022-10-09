@@ -240,6 +240,7 @@ p {
 
 .auction {
   overflow: hidden;
+  margin-left: 40px;
 }
 .auction .auction-text {
   padding-top: 0;
@@ -248,6 +249,7 @@ p {
 }
 .auction .auction-carousel {
   overflow-x: scroll;
+  width: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -260,6 +262,9 @@ p {
           flex-direction: row;
   margin-bottom: 120px;
   gap: 40px;
+}
+.auction .auction-carousel::-webkit-scrollbar {
+  display: none;
 }
 .auction .auction-card {
   margin-top: 40px;
@@ -275,7 +280,7 @@ p {
   grid-template-columns: 50% 50%;
   margin: 24px;
 }
-.auction .auction-card__bottom__bottomC1 {
+.auction .auction-card .auction-card-bottomC1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -284,24 +289,24 @@ p {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.auction .auction-card__bottom__bottomC1 .auction-series {
+.auction .auction-card .auction-card-bottomC1 .auction-series {
   color: #FF8139;
   font-weight: 500;
   font-size: 12px;
   text-transform: uppercase;
 }
-.auction .auction-card__bottom__bottomC1 .auction-name {
+.auction .auction-card .auction-card-bottomC1 .auction-name {
   color: #111111;
   font-weight: 500;
   font-size: 20px;
 }
-.auction .auction-card__bottom__bottomC1 .auction-number {
+.auction .auction-card .auction-card-bottomC1 .auction-number {
   color: #555555;
   font-size: 18px;
   font-weight: 400;
   margin-bottom: 24px;
 }
-.auction .auction-card__bottom__bottomC2 {
+.auction .auction-card .auction-card__bottomC2 {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -314,24 +319,24 @@ p {
       -ms-flex-align: end;
           align-items: flex-end;
 }
-.auction .auction-card__bottom__bottomC2 .auction-bid {
+.auction .auction-card .auction-card__bottomC2 .auction-bid {
   color: #555555;
   font-weight: 500;
   font-size: 12px;
   text-transform: uppercase;
 }
-.auction .auction-card__bottom__bottomC2 .auction-eth {
+.auction .auction-card .auction-card__bottomC2 .auction-eth {
   color: #111111;
   font-weight: 500;
   font-size: 20px;
 }
-.auction .auction-card__bottom__bottomC2 .auction-days {
+.auction .auction-card .auction-card__bottomC2 .auction-days {
   color: #555555;
   font-size: 18px;
   font-weight: 400;
   margin-bottom: 24px;
 }
-.auction .auction-card__bottom__bottomC2 .etherium {
+.auction .auction-card .auction-card__bottomC2 .etherium {
   position: absolute;
   top: 30px;
   left: 15px;
@@ -352,6 +357,7 @@ p {
   font-size: 46px;
   line-height: 58px;
   margin-bottom: 46px;
+  max-width: 450px;
 }
 .upsell .hidden {
   display: none;
@@ -505,8 +511,13 @@ p {
     display: inline;
   }
   .auction {
+    margin-left: 0;
     padding-left: 80px;
     padding-right: 80px;
+  }
+  .auction .auction-carousel {
+    overflow-x: visible;
+    gap: 30px;
   }
   .upsell .upsell-text .hidden {
     display: inline;
@@ -514,6 +525,9 @@ p {
   .upsell .upsell-text h2 {
     font-size: 56px;
     line-height: 68px;
+    max-width: -webkit-fit-content;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
   }
   .upsell .upsell-text .upsell-p {
     width: 510px;
@@ -527,6 +541,9 @@ p {
   .footer {
     display: grid;
     grid-template-columns: 40% 60%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-top: 120px;
   }
   .footer .footer-second {
